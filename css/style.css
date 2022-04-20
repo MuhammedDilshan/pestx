@@ -306,15 +306,18 @@ header ul.nav li a {
   line-height: 1.3em;
   letter-spacing: 0.5px;
 }
+
 #details .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 80px 200px 0 200px;
 }
+
 #details .item:last-child {
   padding-top: 0;
 }
+
 #details .item.reverse {
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -324,22 +327,52 @@ header ul.nav li a {
 #details .item.reverse .img-box {
   width: 300px;
 }
+
 #details .item .txt-box {
   width: 400px;
 }
+
 #details .item .txt-box p {
   line-height: 1.5em;
   color: var(--gray);
 }
+
 #details .item .img-box {
   width: 300px;
   border: 1px dashed #790111;
   border-radius: 24px;
   padding: 8px;
+  position: relative;
 }
+
+#details .item .img-box .dash {
+  position: absolute;
+  border: 1px dashed #ed1d24;
+  opacity: 0.2;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: -38px;
+  left: 234px;
+  z-index: -1;
+}
+
+#details .item .img-box .box {
+  position: absolute;
+  background: #ed1d24;
+  opacity: 0.05;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: -19px;
+  left: 242px;
+  z-index: -1;
+}
+
 #details .box-wrapper {
   width: 410px;
 }
+
 #details .item hr {
   width: 2px;
   height: 340px;
@@ -348,12 +381,14 @@ header ul.nav li a {
   position: absolute;
   top: 60px;
 }
+
 #details .border-box {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #details .border-box h4 {
   display: inline-block;
   width: fit-content;
@@ -361,18 +396,22 @@ header ul.nav li a {
   font-size: 30px;
   color: #790111;
 }
+
 #details .item .img-box img {
   display: block;
   width: 100%;
 }
+
 #details .item .txt-box h2 {
   font-size: 24px;
   margin-bottom: 18px;
 }
+
 #details .item .txt-box p {
   font-size: 18px;
   width: 70%;
 }
+
 /* details end */
 
 #services {
@@ -401,6 +440,7 @@ header ul.nav li a {
   text-transform: uppercase;
   color: var(--prime-red);
 }
+
 #services .top .button a:hover img {
   transform: translateX(8px);
 }
@@ -456,12 +496,36 @@ header ul.nav li a {
   font-size: 18px;
   line-height: 1.3em;
 }
-/* services end */
+
+/* services end */  
 
 #blog {
-  padding: 100px 0 80px 0;
+  padding: 130px 0 80px 0;
+  position: relative;
+}
+#blog .dash {
+  position: absolute;
+  border: 1px dashed #ed1d24;
+  opacity: 0.2;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: -60px;
+  left: -60px;
+  z-index: -1;
 }
 
+#blog .box {
+  position: absolute;
+  background: #ed1d24;
+  opacity: 0.05;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: -34px;
+  left: -35px;
+  z-index: -1;
+}
 #blog .top {
   display: flex;
   justify-content: space-between;
@@ -483,13 +547,16 @@ header ul.nav li a {
   text-transform: uppercase;
   color: var(--prime-red);
 }
+
 #blog .top .button a:hover img {
   transform: translateX(8px);
 }
+
 #blog .top .button a img {
   margin-left: 14px;
   transition: 0.3s ease;
 }
+
 #blog .bottom {
   padding: 50px 0;
 }
@@ -509,9 +576,11 @@ header ul.nav li a {
   cursor: pointer;
   margin-right: 20px;
 }
+
 #blog .bottom ul li:hover img {
   transform: scale(1.07);
 }
+
 #blog .bottom ul li .image-box {
   width: 100%;
   margin-bottom: 24px;
@@ -523,7 +592,7 @@ header ul.nav li a {
   display: block;
   width: 100%;
   transition: .3s ease;
- 
+
 }
 
 #blog .bottom ul li h4 {
@@ -537,6 +606,7 @@ header ul.nav li a {
   line-height: 1.3em;
   color: #9c9c9c;
 }
+
 #blog .bottom ul li .button {
   display: flex;
   align-items: center;
@@ -544,22 +614,23 @@ header ul.nav li a {
   font-weight: 600;
   color: var(--prime-red);
 }
+
 #blog .bottom ul li .button:hover img {
   transform: translateX(8px);
 }
+
 #blog .bottom ul li .button img {
   transition: 0.3s ease;
   margin-left: 14px;
 }
+
 /* blog end */
 
 footer {
   padding: 40px 0 0 0;
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       #790111 0%,
-      rgba(179, 95, 48, 0.01) 101.74%
-    ),
+      rgba(179, 95, 48, 0.01) 101.74%),
     url(../images/footer.png);
   background-size: cover;
   background-position: center;
@@ -687,6 +758,7 @@ footer .bottom .middle ul li {
   margin-right: 24px;
   opacity: 0.5;
 }
+
 footer .bottom .middle ul li:hover {
   opacity: 1;
 }
@@ -709,6 +781,7 @@ footer .bottom .social ul li {
   width: 20px;
   transition: 0.3s ease;
 }
+
 footer .bottom .social ul li:hover {
   transform: scale(1.1);
   opacity: 0.5;
@@ -741,6 +814,6 @@ footer .box p a {
   transition: .3s ease;
 }
 
-footer .box p a:hover{
+footer .box p a:hover {
   color: #fff;
 }
