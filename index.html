@@ -4,8 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PESTX</title>
+    <title>Pestx - Home</title>
+    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content=""
+    />
+    <meta name="keywords" content="" />
+    <meta
+      property="og:description"
+      content=""
+    />
+    <meta property="og:title" content="Pestx" />
+    <meta property="og:image" content="./images/logo.png" />
+
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js" defer></script>
     <!-- favicon -->
     <link rel="icon" href="./images/logo.png" />
   </head>
@@ -17,8 +36,8 @@
         </h1>
         <ul class="nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
@@ -38,13 +57,19 @@
       </div>
     </section>
     <!-- spotlight end -->
+
     <section id="about">
       <div class="wrapper">
-        <div class="image">
-          <img src="./images/about.png" alt="About" />
+        <div class="image-box">
+          <div class="image">
+            <img src="./images/about.png" alt="About" />
+          </div>
+          <div class="sub-image">
+            <img src="./images/about 1.png" alt="About" />
+          </div>
         </div>
         <div class="content">
-          <h6>About us</h6>
+          <h6 class="main-head">About us</h6>
           <h3>Building Cleaning & Fumigation</h3>
           <p>
             Pulvinar non in scelerisque quisque. In sed adipiscing dignissim at.
@@ -59,10 +84,11 @@
       </div>
     </section>
     <!-- about end -->
+
     <section id="details">
       <div class="wrapper">
         <div class="top">
-          <h6>what we do</h6>
+          <h6 class="main-head">what we do</h6>
           <div class="dash"></div>
           <div class="box"></div>
           <h3>Building Cleaning & Fumigation</h3>
@@ -71,21 +97,81 @@
             egestas laoreet penatibus eu maecenas lorem turpis.
           </p>
         </div>
+        <div class="bottom">
+          <div class="item">
+            <div class="txt-box">
+              <h2>Get best Service</h2>
+              <p>Lorem lorem scelerisque vel vulputate enim. Ac, gravida habitasse egestas laoreet penatibus eu maecenas lorem turpis. Pellentesque viverra ipsum, mattis turpis. Diam commodo quisque dui viverra adipiscing sed.
+              </p>
+  
+            </div>
+           <div class="border-box">
+             <h4>01</h4>
+            <hr class="one">
+           </div>
+            <div class="img-box">
+              <img src="./images/img.png" alt="Service">
+            </div>
+          </div>
+          <div class="item reverse">
+            <div class="txt-box">
+              <h2>100% price transperancy</h2>
+              <p>Lorem lorem scelerisque vel vulputate enim. Ac, gravida habitasse egestas laoreet penatibus eu maecenas lorem turpis. Pellentesque viverra ipsum, mattis turpis. Diam commodo quisque dui viverra adipiscing sed.
+              </p>
+  
+            </div>
+           <div class="border-box">
+             <h4>02</h4>
+            <hr class="one">
+           </div>
+            <div class="box-wrapper">
+              <div class="img-box">
+                <img src="./images/img1.png" alt="Service">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="txt-box">
+              <h2>Say Good Bye to Pest</h2>
+              <p>Lorem lorem scelerisque vel vulputate enim. Ac, gravida habitasse egestas laoreet penatibus eu maecenas lorem turpis. Pellentesque viverra ipsum, mattis turpis. Diam commodo quisque dui viverra adipiscing sed.
+              </p>
+  
+            </div>
+           <div class="border-box">
+             <h4>03</h4>
+           </div>
+            <div class="img-box">
+              <img src="./images/img3.png" alt="Service">
+            </div>
+          </div>
+        </div>
+          
+        </div>
       </div>
     </section>
     <!-- details end -->
     <section id="services">
       <div class="wrapper">
-        <h6>Services</h6>
+        <h6 class="main-head">Services</h6>
         <div class="top">
           <h3>We are here to Serve you</h3>
           <div class="button">
-            <a href="#" class="button">view More</a>
-            <img src="" alt="Arrow" />
+            <a href="#" class="button">view More  <img src="./images/Vector 10.png" alt="Arrow" /></a>
+           
           </div>
         </div>
         <div class="bottom">
-          <ul>
+          <ul class="service-slider">
+            <li>
+              <div class="images">
+                <img src="./images/Vector.png" alt="Vector" />
+              </div>
+              <h4>Residential Pest Control</h4>
+              <p>
+                Purus purus, porttitor auctor ac condimentum risus, ipsum id.
+                egestas enim eget vitae sit tortor
+              </p>
+            </li>
             <li>
               <div class="images">
                 <img src="./images/Vector.png" alt="Vector" />
@@ -131,18 +217,19 @@
       </div>
     </section>
     <!-- services end -->
+
     <section id="blog">
       <div class="wrapper">
-        <h6>blog</h6>
+        <h6 class="main-head">blog</h6>
         <div class="top">
           <h3>Disinfection & Sterilization</h3>
           <div class="button">
-            <a href="#" class="button">view More</a>
-            <img src="" alt="Arrow" />
+            <a href="#" class="button">view More <img src="./images/Vector 10.png" alt="Arrow" /></a>
+            
           </div>
         </div>
         <div class="bottom">
-          <ul>
+          <ul class="blog-slider">
             <li>
               <div class="image-box">
                 <img src="./images/Pest Control.png" alt="Pest Control" />
@@ -153,14 +240,14 @@
                 purus amet. Nunc eget dignissim ante ac tellus.
               </p>
               <div class="button">
-                <a href="#" class="button">Read More</a>
-                <img src="" alt="Arrow" />
+                <a href="#" class="button">Read More <img src="./images/Vector 10.png" alt="Arrow" /> </a>
+                
               </div>
             </li>
             <li>
               <div class="image-box">
                 <img
-                  src="./images/Cocroach Control.png"
+                  src="./images/Flies Control.png"
                   alt="Cocroach Control"
                 />
               </div>
@@ -171,12 +258,12 @@
               </p>
               <div class="button">
                 <a href="#" class="button">Read More</a>
-                <img src="" alt="Arrow" />
+                <img src="./images/Vector 10.png" alt="Arrow" />
               </div>
             </li>
             <li>
               <div class="image-box">
-                <img src="./images/Flies Control.png" alt="Flies Control" />
+                <img src="./images/Cocroach Control.png" alt="Flies Control" />
               </div>
               <h4>Flies Control</h4>
               <p>
@@ -184,8 +271,22 @@
                 purus amet. Nunc eget dignissim ante ac tellus.
               </p>
               <div class="button">
-                <a href="#" class="button">Read More</a>
-                <img src="" alt="Arrow" />
+                <a href="#" class="button">Read More <img src="./images/Vector 10.png" alt="Arrow" /></a>
+                
+              </div>
+            </li>
+            <li>
+              <div class="image-box">
+                <img src="./images/Pest Control.png" alt="Pest Control" />
+              </div>
+              <h4>General Pest Control</h4>
+              <p>
+                Aliquet sed aliquam cursus scelerisque enim convallis tellus
+                purus amet. Nunc eget dignissim ante ac tellus.
+              </p>
+              <div class="button">
+                <a href="#" class="button">Read More <img src="./images/Vector 10.png" alt="Arrow" /> </a>
+                
               </div>
             </li>
           </ul>
@@ -195,33 +296,74 @@
     <!-- blog end -->
     <footer>
       <div class="wrapper">
-        <div class="contact">
-          <h3>Contact Us</h3>
-          <p>Hey there, we are here for you anytime. Just dial or mail us.</p>
-          <div class="phone">
-            <img src="./images/phone.svg" alt="Phone" />
-            <a href="+91 6232 444 699">+91 6232 444 699</a>
+        <div class="top">
+          <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Hey there, we are here for you anytime. Just dial or mail us.</p>
+            <div class="phone">
+              <img src="./images/phone.svg" alt="Phone" />
+              <a href="+91 6232 444 699">+91 6232 444 699</a>
+            </div>
+            <div class="phone">
+              <img src="./images/location.svg" alt="Location" />
+              <a
+                href="123 street, california, 
+              United states."
+                >123 street, california, United states.</a
+              >
+            </div>
+            <div class="phone">
+              <img src="./images/mail.svg" alt="Mail" />
+              <a href="pestx@gmail.com">pestx@gmail.com</a>
+            </div>
           </div>
-          <div class="location">
-            <img src="./images/location.svg" alt="Location" />
-            <a
-              href="123 street, california, 
-            United states."
-              >123 street, california, United states.</a
-            >
-          </div>
-          <div class="mail">
-            <img src="./images/mail.svg" alt="Mail" />
-            <a href="pestx@gmail.com">pestx@gmail.com</a>
+          <div class="form">
+            <h3>Get in touch</h3>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Phone" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Message" />
+            <a href="#" class="button">Send</a>
           </div>
         </div>
-        <div class="form">
-          <h3>Get in touch</h3>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Phone" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Message" />
-          <a href="#" class="button">Send</a>
+      </div>
+      <div class="bottom">
+        <div class="wrapper">
+          <div class="logo">
+            <a href="index.html"><img src="./images/Frame.png" alt="Logo" /></a>
+          </div>
+          <div class="middle">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><img src="./images/insta.svg" alt="Instagram"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/fb.svg" alt="Facebook"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/twitter.svg" alt="Twitter"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/linkedin.svg" alt="Linkedin"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="line" />
+        <div class="box">
+          <p>
+            © All rights reserved | Designed and developed by
+            <a href="#">Tegain</a>
+          </p>
         </div>
       </div>
     </footer>
