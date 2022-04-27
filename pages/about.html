@@ -1,12 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/index.js" defer></script>
+    <!-- favicon -->
+    <link rel="icon" href="../images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1 class="logo">
+          <a href="./index.html"><img src="../images/logo.png" alt="Logo" /></a>
+        </h1>
+        <div class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="overlay" onclick="hide()"></div>
+        <div class="menu-bar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/blog.html">Blog</a></li>
+            <li><a href="./pages/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="../pages/about.html">About Us</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+          <li><a href="../pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- header end -->
+    <section id="spotlight-about">
+      <div class="wrapper">
+        <div class="text-box">
+          <h6>About us</h6>
+          <h2>Fast & Safe Pest Elimination</h2>
+        </div>
+      </div>
+    </section>
+    <!-- spotlight end -->
+    <section id="company">
+      <div class="dash">
+        <img src="../images/company-box.svg" alt="Company-box" />
+      </div>
+      <div class="wrapper">
+        <div class="img-box">
+          <img src="../images/company.png" alt="Company" />
+        </div>
+        <div class="txt-box">
+          <h3 class="about-head">Our Company</h3>
+          <p class="notes">
+            Purus tortor lectus nec urna, tincidunt pellentesque libero.
+            Habitant amet vel sit a ac enim ipsum. Habitasse tempus vitae
+            praesent vestibulum lacus augue est. In turpis pretium sed
+            pellentesque nulla sagittis lectus congue. Quam ultricies pharetra
+            amet dictumst sed consectetur posuere. Ut donec dui, arcu consequat,
+            tortor elementum, lacus. Nisl id lorem nullam tellus amet penatibus
+            et maecenas. Praesent cras varius nullam nunc faucibus consequat.
+            Sed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- company end -->
+
+    <section id="team">
+      <div class="wrapper">
+        <h3 class="about-head">Our Team</h3>
+        <p>
+          Purus tortor lectus nec urna, tincidunt pellentesque libero. Habitant
+          amet vel sit a ac enim ipsum.
+        </p>
+        <div class="round">
+          <img src="../images/round.svg" alt="Round" />
+        </div>
+        <ul>
+          <li>
+            <div class="image">
+              <img src="../images/Terry Baptista.png" alt="Terry Baptista" />
+            </div>
+            <h6>Terry Baptista</h6>
+            <span>CEO</span>
+          </li>
+          <li>
+            <div class="image">
+              <img src="../images/Kadin Calzoni.png" alt="Kadin Calzoni" />
+            </div>
+            <h6>Kadin Calzoni</h6>
+            <span>Director</span>
+          </li>
+          <li class="last-child">
+            <div class="image">
+              <img src="../images/Craig Septimus.png" alt="Craig Septimus" />
+            </div>
+            <h6>Craig Septimus</h6>
+            <span>Manager</span>
+          </li>
+        </ul>
+        <div class="dash">
+          <img src="../images/round.svg" alt="Round" />
+        </div>
+      </div>
+    </section>
+    <!-- team end -->
+    <section id="help">
+      <div class="wrapper">
+        <div class="help-box">
+          <h3 class="about-head">How Can We Help?</h3>
+          <p>
+            Purus tortor lectus nec urna, tincidunt pellentesque libero.
+            Habitant amet vel sit a ac enim ipsum. Habitasse tempus vitae
+            praesent vestibulum lacus augue est. In turpis pretium sed
+            pellentesque nulla sagittis lectus congue. Quam ultricies pharetra
+            amet dictumst sed consectetur posuere. Ut donec dui, arcu consequat,
+            tortor elementum, lacus. Nisl id lorem nullam tellus amet penatibus
+            et maecenas. Praesent cras varius nullam nunc faucibus consequat.
+            Sed.
+          </p>
+        </div>
+        <div class="help-center">
+          <div class="round">
+            <img src="../images/round.svg" alt="Round" />
+          </div>
+          <ul>
+            <li class="active">
+              <div class="top">
+                <h4>What is Pest Control?</h4>
+                <img src="../images/top arrow.png" alt="Top-arrow" />
+              </div>
+              <div class="bottom">
+                <p>
+                  Pest control, a process that maintains nuisance organisms
+                  below economic thresholds, is a complex ecological process
+                  often mediated by biodiversity.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <h4>What is Pest Control?</h4>
+                <img src="../images/top arrow.png" alt="Top-arrow" />
+              </div>
+              <div class="bottom">
+                <p>
+                  Pest control, a process that maintains nuisance organisms
+                  below economic thresholds, is a complex ecological process
+                  often mediated by biodiversity.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <h4>What is Pest Control?</h4>
+                <img src="../images/top arrow.png" alt="Top-arrow" />
+              </div>
+              <div class="bottom">
+                <p>
+                  Pest control, a process that maintains nuisance organisms
+                  below economic thresholds, is a complex ecological process
+                  often mediated by biodiversity.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <h4>What is Pest Control?</h4>
+                <img src="../images/top arrow.png" alt="Top-arrow" />
+              </div>
+              <div class="bottom">
+                <p>
+                  Pest control, a process that maintains nuisance organisms
+                  below economic thresholds, is a complex ecological process
+                  often mediated by biodiversity.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="top">
+                <h4>What is Pest Control?</h4>
+                <img src="../images/top arrow.png" alt="Top-arrow" />
+              </div>
+              <div class="bottom">
+                <p>
+                  Pest control, a process that maintains nuisance organisms
+                  below economic thresholds, is a complex ecological process
+                  often mediated by biodiversity.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="dash">
+            <img src="../images/round.svg" alt="Round" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="top">
+          <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Hey there, we are here for you anytime. Just dial or mail us.</p>
+            <div class="phone">
+              <a href="+91 6232 444 699">
+                <img src="../images/phone.svg" alt="Phone" />
+                <span>+91 6232 444 699</span>
+              </a>
+            </div>
+            <div class="phone">
+              <a href="123 street, california, United states.">
+                <img src="../images/location.svg" alt="Location" />
+                <span>123 street, california, United states.</span>
+              </a>
+            </div>
+            <div class="phone">
+              <a href="pestx@gmail.com">
+                <img src="../images/mail.svg" alt="Mail" />
+                <span>pestx@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="form">
+            <h3>Get in touch</h3>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Phone" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Message" />
+            <a href="#" class="button">Send</a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="wrapper">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="../images/Frame.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="middle">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/insta.svg" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/fb.svg" alt="Facebook" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/linkedin.svg" alt="Linkedin"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="line" />
+        <div class="box">
+          <p>
+            © All rights reserved | Designed and developed by
+            <a href="#">Tegain</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
