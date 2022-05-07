@@ -139,7 +139,10 @@ $("#pagination-container").pagination({
     items.hide().slice(showFrom, showTo).show();
   },
 });
-
-
+// pre-loader
+var loader = document.querySelectorAll(".loader");
+$( document ).ready(function() {
+    $(".loader").hide();
+});
 
   
