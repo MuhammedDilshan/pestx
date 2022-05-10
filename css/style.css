@@ -150,6 +150,7 @@ header ul.nav li {
   margin-right: 30px;
   opacity: 0.5;
   transition: opacity 0.3s ease-in;
+  color: #fff;
 }
 
 header ul.nav li:last-child {
@@ -292,8 +293,8 @@ header ul.nav li a {
 }
 
 #about .image-box .image {
-  width: 50%;
-  padding: 6px;
+  width: 55%;
+  padding: 8px;
   border-radius: 24px;
   border: 1px dashed #790111;
 }
@@ -304,12 +305,12 @@ header ul.nav li a {
 }
 
 #about .image-box .sub-image {
-  width: 35%;
+  width: 40%;
   position: absolute;
-  top: 77px;
-  left: 172px;
+  top: 87px;
+  left: 222px;
   background: #fff;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 #about .image-box .sub-image img {
@@ -340,10 +341,12 @@ header ul.nav li a {
 #about .content a.button {
   display: inline-block;
   border: 1px solid var(--prime-red);
-  padding: 10px 14px;
+  padding: 10px 22px;
   border-radius: 18px;
   color: var(--prime-red);
   transition: 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #about .content a.button:hover {
@@ -366,8 +369,8 @@ header ul.nav li a {
 #details .top .dash {
   position: absolute;
   width: 100px;
-  top: -31px;
-  left: 369px;
+  top: -16px;
+  left: 365px;
 }
 
 #details .top .dash img {
@@ -537,15 +540,15 @@ header ul.nav li a {
   transition: 0.3s ease-in;
   height: 250px;
   cursor: pointer;
-  background-color: #fff;
   margin-right: 20px;
 }
 
-#services .bottom.service-slider .item:hover {
+#services .bottom .service-slider .item:hover {
   border-radius: 8px;
   transition: 0.3s ease-in;
   transform: scale(1.04);
   height: 250px;
+  background: #fff;
 }
 
 #services .bottom .service-slider .item .images {
@@ -578,13 +581,13 @@ header ul.nav li a {
 
 #blog .dash {
   position: absolute;
-  border: 1px dashed #ed1d24;
+  border: 2px dashed #ed1d24;
   opacity: 0.2;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  top: -60px;
-  left: -60px;
+  width: 240px;
+  height: 240px;
+  top: -140px;
+  left: -105px;
   z-index: -1;
 }
 
@@ -593,10 +596,10 @@ header ul.nav li a {
   background: #ed1d24;
   opacity: 0.05;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  top: -34px;
-  left: -35px;
+  width: 250px;
+  height: 250px;
+  top: -112px;
+  left: -94px;
   z-index: -1;
 }
 
@@ -646,11 +649,17 @@ header ul.nav li a {
   background-color: #fff;
   transition: 0.3s ease-in;
   border: 1px solid #ebebeb;
-  border-radius: 16px;
+  border-radius: 30px;
   cursor: pointer;
-  margin-right: 20px;
-}
 
+  /* new update */
+  margin: 0 10px 16px 10px;
+  height: 500px;
+}
+#blog .bottom .blog-slider .item:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 19px;
+}
+/* new update */
 #blog .bottom .blog-slider .item:hover img {
   transform: scale(1.07);
 }
@@ -662,24 +671,24 @@ header ul.nav li a {
   border-radius: 16px;
 }
 
-/* new update */
-
 #blog .bottom .blog-slider .item .image-box img {
   display: block;
   width: 100%;
   transition: 0.3s ease;
-  height: 180px;
+  /* new update */
+  height: 230px;
+  /* new update */
 }
 
 #blog .bottom .blog-slider .item h4 {
   font-size: 20px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 #blog .bottom .blog-slider .item p {
   font-size: 16px;
-  margin-bottom: 22px;
-  line-height: 1.3em;
+  margin-bottom: 30px;
+  line-height: 1.5em;
   color: #9c9c9c;
 }
 
@@ -735,7 +744,7 @@ footer .contact h3 {
 footer .contact p {
   font-size: 18px;
   line-height: 1.5em;
-  color: #fff;
+  color: #ffffffbc;
   margin-bottom: 36px;
   width: 53%;
 }
@@ -840,11 +849,11 @@ footer .bottom .middle ul {
 
 footer .bottom .middle ul li {
   margin-right: 24px;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 footer .bottom .middle ul li:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 footer .bottom .middle ul li:last-child {
@@ -951,10 +960,12 @@ footer .box p a:hover {
 #company .wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #company .img-box {
-  width: 50%;
+  width: 40%;
+  margin-right: 80px;
 }
 
 #company .img-box img {
@@ -983,7 +994,7 @@ p.notes {
 #company .dash {
   position: absolute;
   width: 250px;
-  top: 110px;
+  top: 70px;
   left: 0px;
   z-index: -1;
 }
@@ -1052,13 +1063,17 @@ p.notes {
   margin-right: 24px;
   width: 25%;
   border-radius: 32px;
-  padding: 40px 76px 40px 76px;
+  padding: 60px 76px 60px 76px;
   background: #ffffff;
   border: 1px solid #ebebeb;
   box-sizing: border-box;
   position: relative;
+  transition: 0.3s ease-in;
 }
-
+#team ul li:hover {
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 #team ul li:last-child {
   margin-right: 0;
 }
@@ -1369,7 +1384,9 @@ p.notes {
 #process .dash {
   width: 18%;
   position: absolute;
-  top: 241px;
+  /* position changed */
+  top: 114px;
+  /* position changed */
   right: 21px;
 }
 
